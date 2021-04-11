@@ -1,11 +1,15 @@
-import "./style.css";
+// import "./style.css";
 
 const Header = () => {
-  return (
-    <nav>
-      <h4>KALKULATOR BMI</h4>
-    </nav>
-  );
+    return (
+        <nav className="h-24 bg-gray-800 text-white shadow-xl">
+            <h4 className="p-5 text-center">KALKULATOR BMI</h4>
+            <ul className="flex justify-center h">
+                <li className="px-2">HOME</li>
+                <li className="px-2">ABOUT</li>
+            </ul>
+        </nav>
+    );
 };
 
 export default Header;
