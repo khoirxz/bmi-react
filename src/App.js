@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header/header";
 import Input from "./components/Input/input";
 import Button from "./components/Button/button";
+import Footer from "./components/Footer/footer";
 import "./styles.css";
 
 class App extends React.Component {
@@ -64,10 +65,16 @@ class App extends React.Component {
                         placeholder="Berat badan"
                     />
                 </div>
-                <Button onClick={this.handleButton} title="HITUNG!" />
-                <div>
-                    HASIL BMI : {this.state.final.toString().substring(0, 4)}
+                <div className="w-11/12 m-auto">
+                    <Button onClick={this.handleButton} title="HITUNG!" />
                 </div>
+
+                <div className="text-center my-5">
+                    HASIL BMI :
+                    <p>{this.state.final.toString().substring(0, 4)}</p>
+                </div>
+
+                <Footer />
             </div>
         );
     }
