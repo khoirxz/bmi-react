@@ -1,0 +1,12 @@
+nav {
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+
+nav,
+h4 {
+  margin-top: 0;
+  padding-top: 10px;
+  text-align: center;
+}
